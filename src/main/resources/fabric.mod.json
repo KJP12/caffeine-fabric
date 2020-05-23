@@ -1,0 +1,14 @@
+{
+  "id": "sleepy",
+  "name": "Less Sleepy Players",
+  "description": "Requires less players to sleep.",
+  "version": "0.0.0",
+  "side": "universal",
+  "initializers": [],
+  "requires": {
+    "minecraft": ">=1.16.x"
+  },
+  "mixins":  {
+    "common": "sleepy.common.json"
+  }
+}
