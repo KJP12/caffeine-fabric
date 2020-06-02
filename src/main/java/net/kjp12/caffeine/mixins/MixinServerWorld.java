@@ -1,4 +1,4 @@
-package net.kjp12.sleepy.mixins;
+package net.kjp12.caffeine.mixins;
 
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -35,6 +35,7 @@ public abstract class MixinServerWorld extends World {
     }
 
     /**
+     * @reason Completely overriding the method since there is no reason to keep the vanilla code here.
      * @author KJP12
      */
     @Overwrite
@@ -46,7 +47,7 @@ public abstract class MixinServerWorld extends World {
                 if(p.isSpectator() || p.isCreative()) c1++;
                 else if(p.isSleeping()) c2++;
             }
-            allPlayersSleeping = c2 > 0 && c2 >= (players.size() - c1) * 0.45F;
+            allPlayersSleeping = c2 > 0 && c2 >= (players.size() - c1) * 0.33333333F;
         }
     }
 

@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.kjp12.sleepy.mixins",
+  "package": "net.kjp12.caffeine.mixins",
   "compatibilityLevel": "JAVA_11",
   "mixins": [
     "MixinServerWorld"

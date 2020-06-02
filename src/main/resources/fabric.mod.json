@@ -1,14 +1,24 @@
 {
-  "id": "sleepy",
-  "name": "Less Sleepy Players",
-  "description": "Requires less players to sleep.",
-  "version": "0.0.0",
-  "side": "universal",
-  "initializers": [],
-  "requires": {
-    "minecraft": ">=1.16.x"
+  "schemaVersion": 1,
+  "id": "caffeine",
+  "version": "${version}",
+  "name": "Caffeine",
+  "description": "Requires less sleeping players to skip the night.",
+  "authors": [
+    "KJP12"
+  ],
+  "contact": {
+    "sources": "https://github.com/KJP12/caffeine-fabric"
   },
-  "mixins":  {
-    "common": "sleepy.common.json"
+  "environment": "*",
+  "entrypoints": {
+    "main": []
+  },
+  "mixins": [
+    "caffeine.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=${minecraft_required}",
+    "fabricloader": ">=${loader_version}"
   }
 }
